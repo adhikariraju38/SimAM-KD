@@ -124,6 +124,8 @@ data/cifar-10-python.tar.gz
 data/cifar-100-python.tar.gz
 results/
 checkpoints/
+declarationStatement.docx
+ESWA-S-26-01148.pdf
 *.pth
 *.pt
 wandb/
