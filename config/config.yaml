@@ -1,0 +1,63 @@
+# SimAM-KD Framework Configuration
+# Author: Raju Kumar Yadav (itsmeerajuyadav@gmail.com)
+
+# Dataset settings
+dataset: cifar10  # cifar10 or cifar100
+num_classes: 10   # Will be auto-set based on dataset
+batch_size: 128
+input_size: 32
+num_workers: 4
+augmentation: standard  # none, standard, autoaugment, cutout
+
+# Model settings
+student_variant: small  # small or large (MobileNetV3)
+attention_types:
+  - none      # Baseline without attention
+  - simam    # SimAM attention
+  - ca       # Coordinate attention
+  - parallel # C//Sim (SimAM + CA parallel)
+
+# Teacher settings
+teacher_model: resnet50  # resnet18, resnet34, resnet50, efficientnet_b0, wrn-28-10
+teacher_epochs: 100
+use_pretrained_teacher: true
+
+# Training settings - Baseline
+baseline_epochs: 100
+lr: 0.001
+weight_decay: 0.0001
+optimizer: adamw  # sgd, adam, adamw
+scheduler: cosine # cosine, step, plateau
+
+# Training settings - Knowledge Distillation
+kd_epochs: 100
+kd_lr: 0.001
+temperature: 4.0  # KD temperature
+alpha: 0.7       # Weight for soft labels (1-alpha for hard labels)
+
+# Pruning settings
+pruning_ratios:
+  - 0.2
+  - 0.3
+  - 0.4
+finetune_epochs: 20
+finetune_lr: 0.0001
+pruning_method: magnitude  # magnitude, taylor, random
+best_attention: simam  # Which attention model to prune
+
+# Experiment settings
+seed: 42
+use_amp: true  # Automatic mixed precision
+early_stopping: 20
+log_interval: 100
+
+# Paths
+data_dir: ./data
+results_dir: ./results
+checkpoints_dir: ./checkpoints
+
+# Ablation study settings (optional)
+ablation:
+  temperatures: [2.0, 4.0, 6.0, 8.0]
+  alphas: [0.5, 0.7, 0.9]
+  pruning_ratios: [0.1, 0.2, 0.3, 0.4, 0.5]

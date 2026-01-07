@@ -1,0 +1,17 @@
+
+\begin{table}[h]
+\centering
+\caption{Main Results on CIFAR-10}
+\label{tab:main_results}
+\begin{tabular}{lccc}
+\toprule
+Method & Accuracy (\%) & Params (M) & Improvement \\
+\midrule
+MobileNetV3-S (Baseline) & 83.53 & 1.68 & - \\
++ Parallel Attention & 83.97 & 1.78 & +0.44 \\
++ Knowledge Distillation & 88.43 & 1.78 & +4.46 \\
++ Pruning (22\%) & 88.34 & 1.38 & +4.37 \\
++ Pruning (29\%) & 87.92 & 1.27 & +3.95 \\
+\bottomrule
+\end{tabular}
+\end{table}
