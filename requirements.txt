@@ -9,7 +9,7 @@ torchvision>=0.15.0
 timm>=0.9.0
 
 # Model compression
-torch-pruning>=1.3.0
+torch-pruning>=1.6.1
 
 # Visualization
 matplotlib>=3.10.9
