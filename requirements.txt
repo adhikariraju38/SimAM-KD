@@ -3,7 +3,7 @@
 
 # Core ML frameworks
 torch>=2.11.0
-torchvision>=0.15.0
+torchvision>=0.26.0
 
 # Pre-trained models
 timm>=1.0.26
