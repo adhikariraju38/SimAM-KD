@@ -18,7 +18,7 @@ seaborn>=0.12.0
 # Utilities
 numpy>=1.24.0
 tqdm>=4.67.3
-pyyaml>=6.0
+pyyaml>=6.0.3
 
 # For calculating FLOPs and parameters
 thop>=0.1.1.post2209072238
