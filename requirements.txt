@@ -21,7 +21,7 @@ tqdm>=4.65.0
 pyyaml>=6.0
 
 # For calculating FLOPs and parameters
-thop>=0.1.1
+thop>=0.1.1.post2209072238
 
 # Optional: Experiment tracking
 # tensorboard>=2.14.0
