@@ -2,7 +2,7 @@
 # Authors: Raju Kumar Yadav, Bibek Kumar Gupta
 
 # Core ML frameworks
-torch>=2.0.0
+torch>=2.11.0
 torchvision>=0.15.0
 
 # Pre-trained models
