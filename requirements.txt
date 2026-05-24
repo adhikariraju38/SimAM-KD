@@ -16,7 +16,7 @@ matplotlib>=3.10.9
 seaborn>=0.13.2
 
 # Utilities
-numpy>=2.4.5
+numpy>=2.4.6
 tqdm>=4.67.3
 pyyaml>=6.0.3
 
