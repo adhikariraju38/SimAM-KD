@@ -17,7 +17,7 @@ seaborn>=0.13.2
 
 # Utilities
 numpy>=2.4.6
-tqdm>=4.68.1
+tqdm>=4.68.2
 pyyaml>=6.0.3
 
 # For calculating FLOPs and parameters
