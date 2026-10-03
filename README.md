@@ -1,11 +1,12 @@
 # SimAM-KD: Attention-Enhanced Knowledge Distillation for Efficient Image Classification
 
-[![arXiv](https://img.shields.io/badge/arXiv-2601.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2601.XXXXX)
+[![TechRxiv](https://img.shields.io/badge/TechRxiv-preprint-00629B.svg)](https://doi.org/10.36227/techrxiv.177006059.90655311/v1)
+[![DOI](https://img.shields.io/badge/DOI-10.36227%2Ftechrxiv.177006059.90655311-blue.svg)](https://doi.org/10.36227/techrxiv.177006059.90655311/v1)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch 2.0+](https://img.shields.io/badge/pytorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 
-Official PyTorch implementation of **"SimAM-KD: Attention-Enhanced Knowledge Distillation for Efficient Image Classification"**.
+Official PyTorch implementation of **"SimAM-KD: Attention-Enhanced Knowledge Distillation for Efficient Image Classification"**, a preprint on TechRxiv (February 2026), DOI [10.36227/techrxiv.177006059.90655311/v1](https://doi.org/10.36227/techrxiv.177006059.90655311/v1).
 
 <p align="center">
   <img src="figures/fig5_main_results.png" width="600">
@@ -198,14 +199,18 @@ fine_tune_pruned_model(pruned_model, train_loader, val_loader, epochs=30)
 
 ## Citation
 
-If you find this work useful, please cite our paper:
+If you find this work useful, please cite the preprint:
 
 ```bibtex
-@article{yadav2026simamkd,
+@misc{yadav2026simamkd,
   title={SimAM-KD: Attention-Enhanced Knowledge Distillation for Efficient Image Classification},
   author={Yadav, Raju Kumar and Khanal, Rajesh and Yadav, Safalta Kumari and Shah, Rikesh Kumar and Gupta, Bibek Kumar},
-  journal={arXiv preprint arXiv:2601.XXXXX},
-  year={2026}
+  howpublished={TechRxiv preprint},
+  publisher={IEEE},
+  year={2026},
+  month={feb},
+  doi={10.36227/techrxiv.177006059.90655311/v1},
+  url={https://doi.org/10.36227/techrxiv.177006059.90655311/v1}
 }
 ```
 
